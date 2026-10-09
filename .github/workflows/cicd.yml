@@ -59,7 +59,7 @@ jobs:
           DB_PORT: ${{ env.DB_PORT }}
 
       - name: Деплой
-        uses: appleboy/drone-ssh:latest@master
+        uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
